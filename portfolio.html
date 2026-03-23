@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DHRUVKUMAR RATHOD | Portfolio</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-color: #2563eb;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f3f4f6;
+            --white: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-color); /* This changes the background to blue */
+            padding: 1rem 5%;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white); /* Changed to white for better contrast */
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--white); /* Changed to white for better contrast */
+            margin-left: 2rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d1d5db; /* A light gray hover effect so users know it's clickable */
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 6rem 5%;
+            background-color: var(--white);
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header h2 {
+            font-size: 1.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background-color: var(--primary-color);
+            color: var(--white);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        /* Sections General */
+        section {
+            padding: 5rem 5%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+        }
+
+        /* Skills & Education Section */
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .info-card {
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .info-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e5e7eb;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .project-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .project-card p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-container {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: var(--white);
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .contact-container a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--text-dark);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#education-skills">Education & Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="about">
+        <h1>DHRUVKUMAR RATHOD</h1>
+        <h2>COMPUTER SCIENCE STUDENT</h2>
+        <p>I am a computer science student who is passionate about web development and who looks forward to engage in teamwork to build a better solution.</p>
+        <a href="#projects" class="btn">View My Projects</a>
+    </header>
+
+    <section id="education-skills">
+        <h2 class="section-title">Education and Skills</h2>
+        <div class="info-grid">
+            
+            <div class="info-card">
+                <h3>EDUCATION</h3>
+                <p>Currently pursuing B.Tech CSE at UIT, Karnavati University, Gandhinagar</p>
+                <p><strong>Years:</strong> (2023-2027)</p>
+                <p><strong>CGPA:</strong> 8.08</p>
+                <br>
+                <h3>CERTIFICATES</h3>
+                <p>• <strong>Full Stack Development:</strong> I have obtained a full-stack development certificate from LinkedIn Learning </p>
+                <p>• <strong>Cloud Security Foundations:</strong> I have obtained a cloud security certificate from AWS.</p>
+            </div>
+
+            <div class="info-card">
+                <h3>SKILLS</h3>
+                <p><strong>Technical Skills:</strong> HTML, CSS, JS, Node.js, Java, Python</p>
+                <br>
+                <p><strong>Soft Skills:</strong> Communication and Teamwork</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projects" style="background-color: var(--white);">
+        <h2 class="section-title">PROJECTS</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <h3>E-commerce Platform | ElectroMart</h3>
+                <p>Developed a full-stack e-commerce platform using Node.js, Express, and MySQL, featuring a scalable relational database schema for managing products and orders.</p>
+                <p>The application implements a dynamic frontend with vanilla JavaScript and CSS, enabling real-time multi-criteria filtering and a responsive, synchronized shopping cart.</p>
+                <p>Additionally, I built RESTful APIs for product management and user authentication, ensuring seamless data flow and high interactivity between the backend logic and the interactive user interface.</p>
+            </div>
+
+            <div class="project-card">
+                <h3>College Prediction System using JEE rank</h3>
+                <p>A college prediction system that predicts collge on the basis of previous data.</p>
+                <p>HTML, CSS, JS for frontend. Flask was used to handle backend requests.</p>
+                <p>MySQL was used as database to store various information such as college name, closing rank, category etc.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">CONTACT INFO</h2>
+        <div class="contact-container">
+            <p><strong>Email:</strong> <a href="mailto:dhruvrathod127@gmail.com">dhruvrathod127@gmail.com</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/dhruvkumar-rathod-084397290" target="_blank">www.linkedin.com/in/dhruvkumar-rathod-084397290</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/1dhruv27" target="_blank">https://github.com/1dhruv27</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 DHRUVKUMAR RATHOD</p>
+    </footer>
+
+</body>
+</html>
